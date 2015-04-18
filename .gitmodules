@@ -1,3 +1,6 @@
 [submodule "skynet"]
 	path = skynet
 	url = git@github.com:cloudwu/skynet.git
+[submodule "lua-conf"]
+	path = lua-conf
+	url = git@github.com:cloudwu/lua-conf.git
