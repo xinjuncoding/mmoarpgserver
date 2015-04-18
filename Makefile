@@ -37,6 +37,7 @@ linux : conf
 
 
 conf : lua-conf/luaconf.c 
+	mkdir -p $(LUA_CLIB_PATH)
 	$(CC) $(CFLAGS) $(SHARED) $^ -o $(LUA_CLIB_PATH)/conf.so
 
 
