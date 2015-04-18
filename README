@@ -1,4 +1,4 @@
-Build
+## Build
 
 For linux, install autoconf first for jemalloc
 
@@ -11,7 +11,7 @@ Or you can :
 export PLAT=linux
 make
 
-Test
+## Test
 
 Run these in different console
 
