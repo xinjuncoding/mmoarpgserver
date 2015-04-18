@@ -1,6 +1,4 @@
 
-skynet version:  0.9.3
-
 ## Build
 
 For linux, install autoconf first for jemalloc
