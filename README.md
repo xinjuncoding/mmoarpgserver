@@ -1,5 +1,5 @@
 # mmoarpgserver
-    a simple mmoarpg game server base on skynet
+  a simple mmoarpg game server base on skynet
 # build
   For linux, install autoconf first for jemalloc
   ```
