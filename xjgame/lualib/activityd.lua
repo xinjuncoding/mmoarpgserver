@@ -1,6 +1,7 @@
 
 
 local skynet = require "skynetex"
+require "skynet.manager"
 local cluster = require "cluster"
 local eventlistener = require "eventlistener"
 

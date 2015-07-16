@@ -1,6 +1,7 @@
 local msgserver = require "msgserverd"
 local crypt = require "crypt"
 local skynet = require "skynetex"
+require "skynet.manager"
 local cluster = require "cluster"
 
 local harborname = skynet.getenv("harborname")

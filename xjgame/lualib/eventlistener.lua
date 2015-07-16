@@ -1,5 +1,5 @@
 local skynet = require "skynetex"
-
+require "skynet.manager"
 
 local command = {}
 local event_listener = {}

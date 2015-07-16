@@ -1,4 +1,5 @@
 local skynet = require "skynet"
+require "skynet.manager"
 local codecache = require "skynet.codecache"
 local core = require "skynet.core"
 local socket = require "socket"

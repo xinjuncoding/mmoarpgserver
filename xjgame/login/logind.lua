@@ -1,6 +1,7 @@
 local login = require "loginserverd"
 local crypt = require "crypt"
 local skynet = require "skynetex"
+require "skynet.manager"
 local cluster = require "cluster"
 
 local name, host, port, instance = ...

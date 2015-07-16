@@ -4,6 +4,7 @@
 --
 
 local skynet = require "skynetex"
+require "skynet.manager"
 local cluster = require "cluster"
 local activityd = require "activityd"
 

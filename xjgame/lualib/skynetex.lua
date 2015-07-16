@@ -4,7 +4,7 @@
 --
 
 local skynet = require "skynet"
-
+require "skynet.manager"
 -- a new timer interface for time
 function skynet.add_timer(ti, func)
 	local flag = true
