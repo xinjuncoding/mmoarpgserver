@@ -207,6 +207,11 @@ function server.start(conf)
 
 		if close then
 			gateserver.closeclient(fd)
+		else 
+			if conf.auth_handler then 
+				local u = connection[fd]
+				conf.auth_handler(u.username, fd, addr)
+			end	
 		end
 	end
 

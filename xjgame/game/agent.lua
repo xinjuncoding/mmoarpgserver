@@ -192,7 +192,7 @@ skynet.start(function()
 	skynet.fork(function()
 		while true do
 			send_package(send_request "heartbeat")
-			skynet.sleep(3000)
+			skynet.sleep(300)
 		end
 	end)
 
