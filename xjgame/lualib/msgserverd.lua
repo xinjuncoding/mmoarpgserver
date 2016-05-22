@@ -243,6 +243,7 @@ function server.start(conf)
 		local u = assert(connection[fd], "invalid fd")
 		local msg_sz = sz - 4
 		local session = netpack.tostring(msg, sz, msg_sz)
+		print("****************** do_request:", tonumber(session))
 		local p = u.response[session]
 		if p then
 			-- session can be reuse in the same connection

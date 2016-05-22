@@ -4,7 +4,8 @@ local netpack = require "netpack"
 local socket  = require "socket"
 local sproto  = require "sproto"
 local conf    = require "conf"
-local proto   = require "proto"
+local netpack = require "netpack"
+local proto   = require "xjproto"
 local sprotoloader  = require "sprotoloader"
 local eventlistener = require "eventlistener"
 
@@ -155,6 +156,12 @@ skynet.start(function()
 	-- send_request = host:attach(sproto.new(proto.s2c))
 	host = sprotoloader.load(1):host "package"
 	send_request = host:attach(sprotoloader.load(2))
+
+-- local req = send_request("scene_aoi_exit", { objid = 1 }, 1)
+-- print("request foobar size =", #req)
+-- local host = sprotoloader.load(2):host "package"
+-- local type, name, request, response = host:dispatch(req,0)
+-- print("************=======name:", type, name, request, response)
 
 	-- 初始化玩家代理数据
 	player.__init__()

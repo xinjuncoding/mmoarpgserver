@@ -14,7 +14,7 @@ skynet.start(function()
 	skynet.uniqueservice("luaconf")
 	
 	-- 
-	skynet.uniqueservice("protoloader")
+	skynet.uniqueservice("xjprotoloader")
 	
 	if harborname == "login" then 
 		-- 启动全局消息派发
