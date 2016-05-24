@@ -157,12 +157,6 @@ skynet.start(function()
 	host = sprotoloader.load(1):host "package"
 	send_request = host:attach(sprotoloader.load(2))
 
--- local req = send_request("scene_aoi_exit", { objid = 1 }, 1)
--- print("request foobar size =", #req)
--- local host = sprotoloader.load(2):host "package"
--- local type, name, request, response = host:dispatch(req,0)
--- print("************=======name:", type, name, request, response)
-
 	-- 初始化玩家代理数据
 	player.__init__()
 
